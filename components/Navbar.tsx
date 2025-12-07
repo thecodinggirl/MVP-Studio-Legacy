@@ -5,34 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="lg:px-2 lg:pt-2">
-      <a className="relative z-10 block w-full bg-ln-gray-900 lg:rounded-[9px] lg:shadow-ln-button-gray" href="https://pro.alignui.com">
-        <div className="flex h-[42px] w-full items-center gap-1 px-4 md:justify-center lg:hidden">
-          <div className="flex items-center gap-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" className="size-[18px] text-ln-orange">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.125" d="M3.396 12.937 1.313 15.08m3.75-.428-1.25 1.285m-1.75-6.75s2.827 1.328 4.124 2.625c1.298 1.298 2.625 4.125 2.625 4.125l2.146-1.992a1.5 1.5 0 0 0 .48-1.1V11.25c3-1.5 4.874-3.938 4.5-9.188-5.25-.375-7.688 1.5-9.188 4.5H5.154a1.5 1.5 0 0 0-1.1.48zm10.874-2.812a1.312 1.312 0 1 1-2.624 0 1.312 1.312 0 0 1 2.624 0"></path>
-            </svg>
-            <span className="text-ln-paragraph-sm text-ln-gray-400">Built faster websites with <span className="font-medium text-ln-gray-0">AlignUI PRO</span></span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" className="size-5 text-ln-gray-300">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.25" d="M14.5 12.204V6m0 0H8.296M14.5 6l-8 8"></path>
-          </svg>
-        </div>
-        <div className="hidden h-10 w-full items-center justify-center gap-2 lg:flex">
-          <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" className="size-5 text-ln-orange">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.125" d="M3.396 12.937 1.313 15.08m3.75-.428-1.25 1.285m-1.75-6.75s2.827 1.328 4.124 2.625c1.298 1.298 2.625 4.125 2.625 4.125l2.146-1.992a1.5 1.5 0 0 0 .48-1.1V11.25c3-1.5 4.874-3.938 4.5-9.188-5.25-.375-7.688 1.5-9.188 4.5H5.154a1.5 1.5 0 0 0-1.1.48zm10.874-2.812a1.312 1.312 0 1 1-2.624 0 1.312 1.312 0 0 1 2.624 0"></path>
-            </svg>
-            <span className="text-ln-label-sm text-ln-gray-400">Built faster websites with <span className="text-ln-gray-0">AlignUI PRO</span> components!</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" className="size-5 shrink-0 text-ln-gray-600">
-            <path fill="currentColor" d="M10.003 11.108a1.183 1.183 0 0 1-1.176-1.176c0-.644.532-1.176 1.176-1.176s1.176.532 1.176 1.176-.532 1.176-1.176 1.176"></path>
-          </svg>
-          <div className="text-ln-label-sm text-ln-gray-0 underline underline-offset-[3px]">Learn more</div>
-        </div>
-      </a>
-
-      <div className="relative z-50 w-full flex-col items-center xl:container lg:flex xl:mx-auto lg:mt-6">
+    <>
+      <div className="relative z-50 w-full flex-col items-center xl:container lg:flex xl:mx-auto lg:pt-2">
         <div className="relative z-20 flex w-full items-center justify-center gap-8 bg-ln-gray-900 lg:bg-transparent lg:justify-stretch">
           <div className="relative hidden h-px flex-1 bg-ln-gray-200 lg:block">
              <img src="https://alignui.com/images/landing/dot.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] -top-1 -left-[37px]" />
@@ -105,7 +79,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
+
       {isOpen && (
         <div className="xl:hidden absolute top-full left-0 w-full bg-white border-b border-ln-gray-200 p-4 shadow-lg z-40 flex flex-col gap-4">
           <a href="#" className="text-sm font-medium py-2 border-b border-ln-gray-100">Products</a>
@@ -114,7 +88,7 @@ const Navbar = () => {
           <a href="#" className="text-sm font-medium py-2">Resources</a>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
